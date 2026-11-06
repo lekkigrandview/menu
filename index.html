@@ -4,11 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>60th &amp; 80th Reception Menu</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Pinyon+Script&display=swap">
+<meta name="description" content="Reception menu, 60th and 80th+ Birthday Thanksgiving, Lekki Grandview Hotel">
+<meta name="theme-color" content="#f5f3ee">
+<link rel="preload" href="fonts/cormorant.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/cinzel.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+@font-face{font-family:"Cinzel";src:url(fonts/cinzel.woff2) format("woff2");font-weight:400 900;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant.woff2) format("woff2");font-weight:300 700;font-style:normal;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-italic.woff2) format("woff2");font-weight:300 700;font-style:italic;font-display:swap}
+@font-face{font-family:"Pinyon Script";src:url(fonts/pinyon.woff2) format("woff2");font-weight:400;font-display:swap}
 /* Layout: a single portrait "menu card" on marbled paper, read top to bottom on a phone like a printed dinner menu, gold foil accents. Single light theme by choice (matches the printed invitation). */
 :root{
   --paper:#f5f3ee;
@@ -121,7 +125,8 @@ header{text-align:center;display:grid;gap:4px;justify-items:center}
   font-family:var(--f-display);font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);
   display:flex;flex-wrap:wrap;justify-content:center;gap:6px 14px;text-align:center;
 }
-.meta span+span::before{content:"\00B7";margin-right:14px;color:var(--gold)}
+.meta{flex-direction:column;align-items:center}
+@media (min-width:460px){ .meta{flex-direction:row} .meta span+span::before{content:"\00B7";margin-right:14px;color:var(--gold)} }
 
 .flourish{display:block;margin:30px auto 6px;width:min(240px,70%);height:auto;color:var(--gold)}
 
